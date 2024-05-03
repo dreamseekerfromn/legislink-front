@@ -7,15 +7,30 @@ import {
   setPersistence,
   browserSessionPersistence
 } from "firebase/auth";
+// Import the functions you need from the SDKs you need
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+const apiKey = import.meta.env.VITE_BASE_FIREBASE_API_KEY;
+const authDom = import.meta.VITE_BASE_FIREBASE_AUTH_DOMAIN;
+const projID = import.meta.VITE_BASE_FIREBASE_PROJECT_ID;
+const storageBucket = import.meta.VITE_BASE_FIREBASE_STORAGE_BUCKET;
+const msgSenderID = import.meta.VITE_BASE_FIREBASE_MESSAGE_SENDER_ID;
+const appID = import.meta.VITE_BASE_FIREBASE_APP_ID;
+const measurementID = import.meta.VITE_BASE_FIREBASE_MEASUREMENT_ID;
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD0e-4wEphpGvxUimuU8REX-21Xa1J9Vmk",
-  authDomain: "legislink-ae81b.firebaseapp.com",
-  projectId: "legislink-ae81b",
-  storageBucket: "legislink-ae81b.appspot.com",
-  messagingSenderId: "830211220810",
-  appId: "1:830211220810:web:8cad661f8d5eecccd1cdb3",
-  measurementId: "G-N7BFXH3ZH1",
+  apiKey: apiKey,
+  authDomain: authDom,
+  projectId: projID,
+  storageBucket: storageBucket,
+  messagingSenderId: msgSenderID,
+  appId: appID,
+  measurementId: measurementID
 };
 
 export const app = initializeApp(firebaseConfig);
