@@ -6,7 +6,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import AddressForm from "../components/AddressForm";
 import Loading from "../components/messages/Loading";
-import "../components/Settings.css";
+import "../components/setting/Settings.css";
 
 import axios from "axios";
 const serverURL = import.meta.env.VITE_BASE_URL;

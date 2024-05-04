@@ -7,10 +7,12 @@ import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
-import MyDistrict from "../components/MyDistrict.jsx";
-import TodayStatements from "../components/TodayStatements.jsx";
 import axios from "axios";
-import TodayVoteHouse from "../components/TodayVoteHouse.jsx";
+
+/** components */
+import MyDistrict from "../components/dashboard/MyDistrict.jsx";
+import TodayStatements from "../components/dashboard/TodayStatements.jsx";
+import TodayVoteHouse from "../components/dashboard/TodayVoteHouse.jsx";
 
 const serverURL = import.meta.env.VITE_BASE_URL;
 
