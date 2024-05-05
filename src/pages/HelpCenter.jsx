@@ -1,4 +1,4 @@
-import Education from "../components/Education";
+import Education from "../components/help/Education";
 
 export default function HelpCenter() {
     return (
