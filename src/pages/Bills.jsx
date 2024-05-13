@@ -1,4 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { fetchForBills } from "../api/axios";
+
+import BillsCard from "../components/bills/billsCard";
+import Error from "../components/messages/Error";
+import Loading from "../components/messages/Loading";
+import BillSummaryPlaceholder from "../components/messages/SummaryMes";
+import SummaryCard from "../components/bills/SummaryCard";
+
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Select from "@mui/material/Select";
@@ -6,12 +14,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
-import { fetchForBills } from "../api/axios";
-import BillsCard from "../components/bills/billsCard";
-import Error from "../components/messages/Error";
-import Loading from "../components/messages/Loading";
-import BillSummaryPlaceholder from "../components/messages/SummaryMes";
-import SummaryCard from "../components/bills/SummaryCard";
 import "../components/bills/Bills.css";
 
 export default function Bills() {

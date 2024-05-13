@@ -1,10 +1,10 @@
-import "../components/Home.css";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import voters from "/src/assets/Voters.png";
 import newVoter from "/src/assets/new-voter.jpeg";
 import billsAffecting from "/src/assets/bills-affecting-community.jpeg";
 import supporBill from "/src/assets/support-of-bills.jpeg";
+import "../components/Home.css";
 
 export default function Home() {
   return (

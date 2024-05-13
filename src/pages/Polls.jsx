@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Poll from '../pages/Poll';
+import { useState, useEffect } from 'react';
 import { Container, Typography } from '@mui/material';
 import { fetchVoterInfo } from '../../api/civicApi';
+import Poll from '../pages/Poll';
 
 const Polls = () => {
     const [polls, setPolls] = useState([]);
