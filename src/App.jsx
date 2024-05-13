@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { AuthProvider } from "./providers/AuthProvider";
+
+/** component */
+import DynamicNav from "./components/DynamicNav";
+
+/** pages */
 import FoF from "./pages/FoF";
 import TestLobby from "./pages/TestLobby";
 import Home from "./pages/Home";
-import DynamicNav from "./components/DynamicNav";
 import Bills from "./pages/Bills";
 import Representatives from "./pages/Representatives";
 import Settings from "./pages/Settings";
@@ -12,6 +15,9 @@ import About from "./pages/About.jsx";
 import RepresentativeDetail from "./pages/RepresentativeDetail.jsx";
 import HelpCenter from "./pages/HelpCenter.jsx";
 import SignIn from "./pages/SignIn.jsx";
+
+/** style */
+import "./App.css";
 
 function App() {
   return (
